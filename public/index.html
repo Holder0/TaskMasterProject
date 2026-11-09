@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedorAplicacion">
+    <header class="encabezadoAplicacion">
+      <h1>TaskMaster</h1>
+      <button id="botonTemaOscuro" class="botonTemaOscuro" type="button" aria-pressed="false">Tema oscuro</button>
+    </header>
+    <form id="formularioTarea" class="formularioTarea">
+      <label class="soloLectores" for="tituloTarea">Nueva tarea</label>
+      <input id="tituloTarea" name="tituloTarea" type="text" placeholder="Escribe una tarea" maxlength="150" required>
+      <button type="submit">Agregar</button>
+    </form>
+    <p id="cajaMensaje" class="cajaMensaje" role="status" aria-live="polite"></p>
+    <section aria-label="Lista de tareas">
+      <ul id="listaTareas" class="listaTareas"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
